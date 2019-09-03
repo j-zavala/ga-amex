@@ -1,0 +1,20 @@
+{
+  "name": "amex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "2_Tues_iterationLab.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "node 2_Tues_iterationLab_solution.js",
+    "test": "mocha -R nyan"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha-sinon": "^2.1.0",
+    "sinon": "^7.4.2"
+  }
+}

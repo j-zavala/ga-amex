@@ -1,0 +1,38 @@
+body {
+  background-color: #ffff63;
+}
+
+.container {
+  padding: 0 25px 25px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px dotted red;
+}
+
+.grid {
+  max-width: 1000px;
+  display: grid;
+  margin: 50px auto;
+  border: 1px solid black;
+  grid-template-columns: 300px 300px;
+  grid-template-rows: 500px;
+}
+
+.title {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 100px;
+  font-weight: 700;
+}
+
+.left {
+  /* width: 300px; */
+  /* height: 500px; */
+  border-right: 1px solid black;
+}
+
+.right {
+  /* width: 300px; */
+  /* height: 500px; */
+}

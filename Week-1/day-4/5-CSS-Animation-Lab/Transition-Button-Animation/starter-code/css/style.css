@@ -1,0 +1,22 @@
+/*------------------------------------------
+  SETUP                   
+/------------------------------------------*/
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  padding: 30px;
+}
+
+button {
+  padding: 20px;
+  border: 1px solid salmon;
+  background-color: salmon;
+  border-radius: 5px;
+  transition: background-color 2s;
+}
+
+button:hover {
+  background-color: #fff;
+  cursor: grab;
+}

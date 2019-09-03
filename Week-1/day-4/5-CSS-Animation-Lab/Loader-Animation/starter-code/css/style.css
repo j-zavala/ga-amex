@@ -1,0 +1,79 @@
+body {
+  background-color: #f5f5f5;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  color: #e1574c;
+}
+
+.loading-dots {
+  width: 130px;
+  margin: 0 auto;
+  opacity: 0.5;
+}
+
+.dot {
+  float: left;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background-color: #e1574c;
+  margin-left: 0.8em;
+}
+
+.loader {
+  width: 70px;
+  height: 70px;
+  margin: 3em auto;
+  border-radius: 100%;
+  border-right: 5px solid #f5f5f5;
+  border-left: 5px solid #f5f5f5;
+  border-top: 5px solid #e1574c;
+  border-bottom: 5px solid #e1574c;
+  /* Animation property */
+  animation: spin 2s linear infinite;
+}
+
+.dot {
+  animation-name: fade-in-out;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+
+.loading-dots:nth-child(1) {
+  animation-delay: 1s;
+}
+
+.loading-dots:nth-child(2) {
+  animation-delay: 2s;
+}
+
+.loading-dots:nth-child(3) {
+  animation-delay: 3s;
+}
+
+/* Keyframe Animation */
+
+@keyframes fade-in-out {
+  0% {
+    background-color: #e1574c;
+  }
+  50.0% {
+    background-color: white;
+  }
+  100.0% {
+    background-color: #e1574c;
+  }
+}
+
+@keyframes spin {
+  0% {
+    /* -webkit-transform: translateX(-50%) rotate(0deg); */
+    transform: rotate(0deg);
+  }
+  100% {
+    /* -webkit-transform: translateX(-50%) rotate(-360deg); */
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,64 @@
+@import url(http://fonts.googleapis.com/css?family=Bevan);
+
+body {
+  background: black;
+}
+
+/* center images to aid in rotation around center of clock */
+img {
+  position: absolute;
+  left: 50%;
+  margin-left: -125px;
+}
+
+/* make the clock face */
+.clock {
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  border: deeppink 5px solid;
+  margin: 8% auto;
+}
+
+.title {
+  font-family: Bevan;
+  font-size: 100px;
+  text-align: center;
+  color: cornflowerblue;
+}
+
+#second-hand {
+  transform-origin: center;
+  transform: rotate(120deg);
+  animation: seconds 60s steps(60, end) 0s infinite;
+}
+
+#minute-hand {
+  transform-origin: center;
+  transform: rotate(62deg);
+  animation: minutes 3600s linear 0s infinite;
+}
+
+hour-hand {
+  transform-origin: center;
+  transform: rotate(-25deg);
+  animation: hours 43200s linear 0s infinite;
+}
+
+@keyframes seconds {
+  to {
+    transform: rotate(480deg);
+  }
+}
+
+@keyframes minutes {
+  to {
+    transform: rotate(422deg);
+  }
+}
+
+@keyframes hours {
+  to {
+    transform: rotate(20deg);
+  }
+}
