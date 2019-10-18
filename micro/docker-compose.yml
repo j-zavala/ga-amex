@@ -1,0 +1,67 @@
+# using the version
+version: '3'
+# list of services from the docker
+services:
+  # for the eureka server
+  postgresdev:
+    image: postgres
+    ports:
+      #    port to run the DB
+      - "5432:5432"
+    #    set the user name, password , db
+    environment:
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=pgdev
+  eureka:
+    # use jdk 1.8 with maven
+    image: maven:3.6.1-jdk-8
+    # open the port 8761; in eureka project we have set 8761 as our primary
+    ports:
+      - '8761:8761'
+    # set working dir as /app
+    working_dir: /app
+    # create volume for the server
+    volumes:
+      - ./eureka-server:/app
+    # tell docker to run the spring boot application
+    command: 'mvn spring-boot:run'
+    # load our primary profile as dev
+    environment:
+      - SPRING_PROFILES_ACTIVE=dev
+  api-gateway:
+    image: maven:3.6.1-jdk-8
+    ports:
+      - '8080:8080'
+    working_dir: /app
+    volumes:
+      - ./api-gateway:/app
+    depends_on:
+      - eureka
+    command: 'mvn spring-boot:run'
+    environment:
+      - SPRING_PROFILES_ACTIVE=dev
+  users-api:
+    image: maven:3.6.1-jdk-8
+    ports:
+      - '8081:8081'
+    working_dir: /app
+    volumes:
+      - ./users-api:/app
+    depends_on:
+      - eureka
+    command: 'mvn spring-boot:run'
+    environment:
+      - SPRING_PROFILES_ACTIVE=dev
+  songs-api:
+    image: maven:3.6.1-jdk-8
+    ports:
+      - '3000:3000'
+    working_dir: /app
+    volumes:
+      - ./songs-api:/app
+    depends_on:
+      - eureka
+    command: 'mvn spring-boot:run'
+    environment:
+      - SPRING_PROFILES_ACTIVE=dev
