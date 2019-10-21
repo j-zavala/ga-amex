@@ -1,0 +1,69 @@
+[
+  {
+    "title": "Chicken Tikka Masala",
+    "byline": {
+      "name": "Nigella Lawson", 
+      "source": "https://cooking.nytimes.com/recipes/5593-chicken-and-apricot-masala"
+    },
+    "ingredients": [
+      "Dried apricots",
+      "6 garlic cloves, finely grated",
+      "4 teaspoons finely grated peeled ginger",
+      "4 teaspoons ground turmeric",
+      "2 teaspoons garam masala",
+      "1 tablespoon kosher salt",
+      "2 pounds skinless, boneless chicken breasts",
+      "3 tablespoons ghee (clarified butter) or vegetable oil",
+      "1 small onion, thinly sliced..."
+    ],
+    "preparation": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "activePrep": "45 minutes",
+    "totalPrep": "1 hour",
+    "servings": 6,
+    "img": "/media/tikka.jpg"
+  },
+  {
+    "title": "Eggs Benedict",
+    "byline": {
+      "name": "Alison Roman",
+      "source": "https://cooking.nytimes.com/recipes/1018626-eggs-benedict"
+    },
+    "ingredients": [
+      "Hollandaise Sauce",
+      "1 tablespoon white distilled vinegar",
+      "Kosher salt",
+      "8 large eggs",
+      "4 English muffins, split",
+      "8 slices Canadian bacon",
+      "2 tablespoons unsalted butter",
+      "1/2 cup chopped chives"
+    ],
+    "preparation": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "activePrep": "20 minutes",
+    "totalPrep": "25 minutes",
+    "servings": 4,
+    "img": "/media/eggs.jpg"
+  },
+  {
+    "title": "Nectarine tart",
+    "byline": {
+      "name": "Florence Fabricant",
+      "source": "https://cooking.nytimes.com/recipes/12697-nectarine-tart?module=Recipe+of+The+Day&pgType=homepage&action=click"
+    },
+    "ingredients": [
+      "1.5 cups flour",
+      "1/2 teaspoon salt",
+      "4 teaspoons sugar",
+      "11 teaspoons cold unsalted butter",
+      "1 egg yolk, beaten",
+      "3 pounds nectarines (or plums, peaches, figs, etc.)",
+      "6 tablespoons red currant jelly, or other preserves, depending on fruit",
+      "1 cup crème fraîche, for serving"
+    ],
+    "preparation": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "activePrep": "40 minutes",
+    "totalPrep": "1 hour 30 minutes",
+    "servings": "8",
+    "img": "/media/nectarines.jpg"
+  }
+]
