@@ -183,30 +183,8 @@ console.log(shortenedTrip);
 const possiblyVowels = [118, 117, 120, 121, 117, 98, 122, 97, 120, 106, 104, 116, 113, 114, 113, 120, 106];
 
 const definitelyVowels = possiblyVowels.map(num => {
-    return (String.fromCharCode(num) === ("a" || "e" || "i" || "o" || "u") ? (possiblyVowels[num] = (String.fromCharCode(num))) : num);
+    return (String.fromCharCode(num) === "a" || String.fromCharCode(num) === "e" || String.fromCharCode(num) === "i" || String.fromCharCode(num) === "o" || String.fromCharCode(num) === "u") ? String.fromCharCode(num) : num;
+})
 
-    // switch (String.fromCharCode(num)) {
-    //     case 'a':
-    //         possiblyVowels[num] = (String.fromCharCode(num));
-    //         return possiblyVowels;
-    //     case 'e':
-    //         possiblyVowels[num] = (String.fromCharCode(num));
-    //         return possiblyVowels;
-    //     case 'i':
-    //         possiblyVowels[num] = (String.fromCharCode(num));
-    //         return possiblyVowels;
-    //     case 'o':
-    //         possiblyVowels[num] = (String.fromCharCode(num));
-    //         return possiblyVowels;
-    //     case 'u':
-    //         possiblyVowels[num] = (String.fromCharCode(num));
-    //         return possiblyVowels;
-    //     default:
-    //         possiblyVowels[num] = num;
-    //         return possiblyVowels;
-    // }
-
-    //  String.fromCharCode(num) === "A" || "E" || "I" || "O" || "U" ? 
-});
 console.log(definitelyVowels);
 
