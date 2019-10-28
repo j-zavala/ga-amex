@@ -1,0 +1,14 @@
+{
+  "name": "friday-hw-testing-app",
+  "version": "1.0.0",
+  "description": "An app to play around with testing.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^24.9.0"
+  }
+}
