@@ -7,6 +7,8 @@ import Recipe from '../Components/Recipe';
 import RecipeHeader from '../Components/RecipeHeader';
 import Footer from '../Components/Footer';
 
+import 'recipes.json';
+
 const recipe = recipes[0];
 
 class App extends Component {
@@ -15,7 +17,7 @@ class App extends Component {
       <div>
         <Nav />
         <RecipeHeader />
-        <Recipe />
+        <Recipe recipe={recipe} />
         <Footer />
       </div>
     );

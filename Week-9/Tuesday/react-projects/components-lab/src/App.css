@@ -1,0 +1,8 @@
+h1 {
+  color: red;
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+}

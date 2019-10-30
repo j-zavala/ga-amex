@@ -5,6 +5,8 @@ public class Animal {
     private boolean isEndangered;
     private String name;
 
+    String newLine = System.getProperty("line.separator");//This will retrieve line separator dependent on OS.
+
     //Put constructor here
     public Animal(int numLegs, int topSpeed , boolean isEndangered, String name){
         this.numLegs = numLegs;
@@ -54,50 +56,27 @@ public class Animal {
         this.name = name;
     }
 
+    public String intro(int topSpeed, boolean isEndangered, String name)
+    {
+//      set the properties to what user inputs
+        setName(name);
+        setTopSpeed(topSpeed);
+        setIsEndangered(isEndangered);
 
+        String areWeEndangered = getIsEndangered() ? "I am endangered" : "I am NOT endangered";
 
-    public static void main(String[] args) {
+        //return the string detailing the animal properties
+        String output = "Name: " + name + newLine + "Top speed: " + newLine +  "Endangered: " + areWeEndangered + newLine;
+        return output;
+    }
+
+    public static void main(String[] args)
+    {
+        String newLine = System.getProperty("line.separator");//This will retrieve line separator dependent on OS.
         //Instantiate new Animal
         Animal animal = new Animal(4, 75, true, "cheetah");
-        String name;
-        int topSpeed;
-        boolean isEndangered;
-
-        //get name and speed values using getters
-        name = animal.getName();
-        topSpeed = animal.getTopSpeed();
-        isEndangered = animal.getIsEndangered();
-
-        //Print some output
-        System.out.println("My name is " + name);
-        System.out.println("I go at " + topSpeed + " miles per hour");
-
-        if (isEndangered) {
-            System.out.println("I am endangered.");
-        } else
-        {
-            System.out.println("I am not endangered.");
-        }
-
-
-        //Set new name, speed, and endangered properties values using setters
-        animal.setName("turtle");
-        animal.setTopSpeed(1);
-        animal.setIsEndangered(false);
-
-        //get new values using getters
-        name = animal.getName();
-        topSpeed = animal.getTopSpeed();
-        isEndangered = animal.getIsEndangered();
-
-        //Print some output
-        System.out.println("My name is " + name);
-        System.out.println("I go at " + topSpeed + " miles per hour");
-        if (isEndangered) {
-            System.out.println("I am endangered.");
-        } else
-        {
-            System.out.println("I am NOT endangered.");
-        }
+        System.out.print("Name: " + animal.getName() + newLine + "Top speed: " + animal.getTopSpeed() + newLine + "Endangered: " + animal.getIsEndangered());
+        System.out.println(newLine);
+        System.out.print(animal.intro(75, true, "Bill"));
     }
 }

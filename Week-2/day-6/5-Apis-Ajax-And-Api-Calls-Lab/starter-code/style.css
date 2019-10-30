@@ -1,0 +1,60 @@
+body {
+  background-color: #333;
+  font-family: Helvetica;
+}
+
+#container {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  width: 700px;
+  height: 400px;
+  border: 5px solid #888;
+  background: #ccc;
+  margin: 0px 0 0 -350px;
+  text-align: center;
+}
+
+#photo {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  border: 5px solid #888;
+  border-radius: 50%;
+  left: 50%;
+  top: 5%;
+  margin: 0 0 0 -75px;
+  background-image: url(https://randomuser.me/api/portraits/women/91.jpg);
+  background-size: contain;
+}
+
+#content {
+  position: absolute;
+  height: 70px;
+  width: 100%;
+  top: 200px;
+  text-align: center;
+}
+#smalltext {
+  display: block;
+}
+#bigtext {
+  display: block;
+  font-size: 32pt;
+  font-weight: bold;
+}
+
+.attribute {
+  display: inline-block;
+  font-size: 32pt;
+  margin: 0 25px 0 25px;
+  margin-top: 330px;
+}
+
+body {
+  text-align: center;
+}
+
+button {
+  margin-top: 15px;
+}

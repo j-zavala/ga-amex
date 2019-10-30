@@ -6,15 +6,15 @@ class Ingredients extends Component {
             <div id="Ingredients_cont">
                 <h1>Ingredients</h1>
                 <ul>
-                    <li>6 garlic cloves, finely grated</li>
-                    <li>4 teaspoons finely grated peeled ginger</li>
-                    <li>4 teaspoons ground turmeric</li>
-                    <li>2 teaspoons garam masala</li>
-                    <li>2 teaspoons ground cumin</li>
-                    <li>1 tablespoon kosher salt</li>
-                    <li>2 pounds skinless, boneless chicken breasts</li>
-                    <li>3 tablespoons ghee (clarified butter) or vegetable oil</li>
-                    <li>1 small onion, thinly sliced...</li>
+                    <li>{this.props.recipe.ingredients[0]}</li>
+                    <li>{this.props.recipe.ingredients[1]}</li>
+                    <li>{this.props.recipe.ingredients[2]}</li>
+                    <li>{this.props.recipe.ingredients[3]}</li>
+                    <li>{this.props.recipe.ingredients[4]}</li>
+                    <li>{this.props.recipe.ingredients[5]}</li>
+                    <li>{this.props.recipe.ingredients[6]}</li>
+                    <li>{this.props.recipe.ingredients[7]}</li>
+
                 </ul>
             </div>
         );
