@@ -13,7 +13,7 @@ public class CourseController {
     @Autowired
     CourseService courseService;
 
-    @PostMapping
+    @PostMapping("/add")
     public Course createCourse(@RequestBody Course course){
         return courseService.createCourse(course);
     }
